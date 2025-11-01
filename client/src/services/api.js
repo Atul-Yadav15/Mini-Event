@@ -1,4 +1,4 @@
-const API_BASE_URL = '/api';
+const API_BASE_URL = 'https://mini-event.onrender.com/api';
 
 const handleResponse = async (response) => {
   const data = await response.json();
