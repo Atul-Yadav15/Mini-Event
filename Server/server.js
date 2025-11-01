@@ -20,8 +20,9 @@ connectDatabase();
 
 // Middleware
 app.use(cors({
-  origin: ["https://mini-event-1.onrender.com"], // frontend Render URL
-  credentials: true,
+  origin: "https://mini-event-frontend.onrender.com", // replace with your actual frontend render URL
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
 })); // Enable CORS for all routes
 app.use(express.json()); // Parse JSON request bodies
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
